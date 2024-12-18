@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.p-datatable .p-checkbox {
+    @apply  scale-[2] ;
+    @apply  bg-slate-700  border-red-50   ;                    /* Scale overall without affecting internal parts */
+  }
+
+/* .p-datatable .p-checkbox .p-checkbox-box {
+    @apply hidden;
+ } */
+  
+
