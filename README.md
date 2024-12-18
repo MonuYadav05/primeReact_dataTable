@@ -61,16 +61,3 @@ This is a React-based application built with Vite and TypeScript, designed to di
 
 ---
 
-## Checks Before Submission
-Before submitting your application, ensure the following:
-1. **No Variables Holding All Rows**:
-   - Do not store all fetched rows from multiple pages in a single variable to avoid memory issues.
-
-2. **Server-Side Data Fetching**:
-   - Ensure the application fetches data from the server for each page change, regardless of how many times a page is visited.
-
-3. **Row Selection Persistence**:
-   - When users visit a page, make selections/deselections, and navigate away, those changes must persist if the page is revisited.
-
----
-
