@@ -4,6 +4,7 @@ import { fetchData } from './services/FetchData'
 import { dataType } from './types/dataType';
 import Datatable from './components/Datatable'
 import { Pagination, selectedData2 } from './types/pagination';
+import Spinner from './components/Spinner';
 
 function App() {
 const [page , setPage] = useState<number>(1)
@@ -89,13 +90,14 @@ const [visitedPages, setVisitedPages] = useState(new Set()); // To track visited
 
 
   if(loading) {
-    return <div>Loading...</div>
+    return <div className='flex justify-center items-center h-screen'><Spinner/></div>
   }
 
   return (
     <div className="min-h-screen bg-gray-100 py-6 px-6">
     <div className="max-w-9xl ">
       <div className="bg-white rounded-lg shadow-lg p-4">
+      
       <Datatable
           data={data} 
           pagination={pagination}

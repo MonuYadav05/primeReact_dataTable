@@ -44,7 +44,7 @@ const handleOnSelectionChange = (event: any) => {
           type="number"
           min="0"
           onChange={(e) => temp = Number(e.target.value)} 
-          style={{ height: "2rem" }}
+          style={{ height: "3rem"  }}
           className='border-2 border-black rounded-md mb-2 p-2'
         />
         <br />
@@ -75,7 +75,7 @@ const handleOnSelectionChange = (event: any) => {
                   label="&#709;"
                   onClick={(e) => op.current?.toggle(e)}
                   className='font-fold'
-                  style={{ all: "unset", cursor: "pointer" }}
+                  style={{ all: "unset",fontSize: "1.6rem", fontWeight:"bolder", cursor: "pointer" }}
                 />
               </div>
             }
